@@ -1,59 +1,122 @@
-<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cardápio - Casa do Norte Big Jabá</title>
-<style>:root{--g:#2e7d32;--r:#c62828;--o:#e67e22;--b:#FAF3E0;--w:#fff}html,body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--b);color:#111}main{max-width:900px;margin:18px auto;padding:14px}h1{color:var(--r);margin:0 0 6px}h2{color:var(--o);font-size:15px;margin:14px 0 6px}ul{list-style:none;padding:0;margin:0}li{background:var(--w);border-radius:10px;padding:10px 12px;margin:8px 0;display:flex;justify-content:space-between;box-shadow:0 6px 14px rgba(0,0,0,.06)}.muted{color:#666;font-size:13px;text-align:center;margin-top:10px}</style>
-<main>
-<header><h1>Casa do Norte Big Jabá</h1><div class="muted">Cardápio digital</div></header>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Casa do Norte Big Jabá — Cardápio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6efe6; --card:#fff; --accent:#c62828; --accent-dark:#9b1f1f;
+  --muted:#6b6b6b; --green:#2e7d32; --shadow:0 10px 30px rgba(15,15,15,0.08);
+  --radius:14px; --maxw:980px;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),#fff);color:#111}
+.container{max-width:var(--maxw);margin:28px auto;padding:20px}
+.header{display:flex;gap:16px;align-items:center}
+.logo{
+  width:84px;height:84px;border-radius:14px;background:linear-gradient(180deg,#f9d976,#f39c12);
+  display:flex;align-items:center;justify-content:center;font-weight:800;color:#6b3b00;box-shadow:var(--shadow)
+}
+.title{line-height:1}
+.title h1{margin:0;font-size:20px;color:var(--accent)}
+.title p{margin:4px 0 0;color:var(--green);font-size:13px}
 
-<section><h2>📅 Pratos do Dia</h2>
-<ul>
-<li><span>Segunda: Virado à Paulista</span><strong>R$ 30,00</strong></li>
-<li><span>Terça: Frango Assado</span><strong>R$ 30,00</strong></li>
-<li><span>Quarta: Feijoada</span><strong>R$ 35,00</strong></li>
-<li><span>Quinta: Dobradinha</span><strong>R$ 30,00</strong></li>
-<li><span>Sexta: Peixe</span><strong>R$ 30,00</strong></li>
-<li><span>Sábado: Rabada</span><strong>R$ 30,00</strong></li>
-<li><span>Domingo: Bife à Parmegiana</span><strong>R$ 48,00</strong></li>
-</ul></section>
+/* hero */
+.hero{display:flex;gap:18px;align-items:center;margin-top:18px}
+.hero .intro{flex:1;background:var(--card);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+.hero h2{margin:0;color:var(--accent-dark);font-size:18px}
+.hero p{margin:8px 0 0;color:var(--muted)}
+.hero .qr{width:160px;height:160px;border-radius:12px;background:linear-gradient(180deg,#fff,#f7f7f7);display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);flex-shrink:0}
 
-<section><h2>🍴 Comerciais e Tradicionais</h2>
-<ul>
-<li><span>Bife de Contra Filé</span><strong>R$ 25,00</strong></li>
-<li><span>Cabrito à Padeiro</span><strong>R$ 58,00</strong></li>
-<li><span>Feijoada Família</span><strong>R$ 180,00</strong></li>
-<li><span>Filé Mignon à Parmegiana</span><strong>R$ 68,00</strong></li>
-<li><span>Vaca Atolada</span><strong>R$ 48,00</strong></li>
-</ul></section>
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.hero{flex-direction:column}.hero .qr{width:120px;height:120px;margin:0 auto}}
 
-<section><h2>🍔 Lanches</h2>
-<ul>
-<li><span>X-Bacon</span><strong>R$ 17,50</strong></li>
-<li><span>Misto Quente</span><strong>R$ 10,00</strong></li>
-<li><span>Churrasco Tradicional</span><strong>R$ 13,00</strong></li>
-<li><span>Calabresa c/ Queijo</span><strong>R$ 14,00</strong></li>
-</ul></section>
+/* card category */
+.cat{background:var(--card);padding:12px;border-radius:12px;box-shadow:var(--shadow)}
+.cat h3{margin:0 0 8px;color:var(--accent);font-size:15px}
+.item{display:flex;justify-content:space-between;align-items:center;padding:8px 6px;border-radius:10px;margin:6px 0}
+.item .left{display:flex;flex-direction:column}
+.item .name{font-weight:600}
+.item .desc{font-size:13px;color:var(--muted);margin-top:4px}
+.price{color:var(--green);font-weight:700}
 
-<section><h2>🍲 Porções</h2>
-<ul>
-<li><span>Moqueca Grande</span><strong>R$ 80,00</strong></li>
-<li><span>Isca de Peixe</span><strong>R$ 60,00</strong></li>
-<li><span>Torresmo</span><strong>R$ 20,00</strong></li>
-<li><span>Frango à Passarinho</span><strong>R$ 48,00</strong></li>
-</ul></section>
+/* footer */
+.footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
 
-<section><h2>🥤 Bebidas</h2>
-<ul>
-<li><span>Refrigerantes</span><strong>R$ 10,00 - R$ 22,00</strong></li>
-<li><span>Sucos Naturais</span><strong>R$ 15,00 - R$ 27,00</strong></li>
-<li><span>Água Mineral</span><strong>R$ 5,00 - R$ 6,00</strong></li>
-</ul></section>
+/* subtle badges */
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,#fff, #fff);border:1px solid rgba(0,0,0,0.04);font-weight:600;color:var(--accent-dark);font-size:13px}
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo" aria-hidden="true">BJ</div>
+      <div class="title">
+        <h1>Casa do Norte Big Jabá</h1>
+        <p>Cardápio digital — pratos, lanches e bebidas</p>
+      </div>
+    </header>
 
-<section><h2>🍸 Drinks</h2>
-<ul>
-<li><span>Caipirinha de Frutas</span><strong>R$ 10,00</strong></li>
-<li><span>Caipirosca de Smirnoff</span><strong>R$ 25,00</strong></li>
-<li><span>Vodka Energético</span><strong>R$ 10,00</strong></li>
-<li><span>Red Label</span><strong>R$ 40,00</strong></li>
-</ul></section>
+    <section class="hero">
+      <div class="intro">
+        <h2>Bem-vindo — escolha seu prato</h2>
+        <p>Cardápio atualizado. Toque no QR para abrir direto no celular ou role para ver as seções.</p>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+          <span class="badge">Pratos do Dia</span>
+          <span class="badge">Porções</span>
+          <span class="badge">Drinks</span>
+        </div>
+      </div>
 
-<p class="muted">Atualizado por Casa do Norte Big Jabá</p>
-</main>
+      <div class="qr" title="Escaneie para abrir no celular">
+        <!-- placeholder QR-like SVG -->
+        <svg width="110" height="110" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="6" height="6" fill="#111"/>
+          <rect x="1" y="9" width="6" height="6" fill="#111"/>
+          <rect x="9" y="1" width="6" height="6" fill="#111"/>
+          <rect x="15" y="15" width="6" height="6" fill="#111"/>
+        </svg>
+      </div>
+    </section>
+
+    <main class="grid" role="main">
+      <div class="cat">
+        <h3>📅 Pratos do Dia</h3>
+        <div class="item"><div class="left"><span class="name">Segunda — Virado à Paulista</span></div><div class="price">R$ 30,00</div></div>
+        <div class="item"><div class="left"><span class="name">Terça — Frango Assado</span></div><div class="price">R$ 30,00</div></div>
+        <div class="item"><div class="left"><span class="name">Quarta — Feijoada</span></div><div class="price">R$ 35,00</div></div>
+        <div class="item"><div class="left"><span class="name">Quinta — Dobradinha</span></div><div class="price">R$ 30,00</div></div>
+      </div>
+
+      <div class="cat">
+        <h3>🍴 Comerciais e Tradicionais</h3>
+        <div class="item"><div class="left"><span class="name">Bife de Contra Filé</span></div><div class="price">R$ 25,00</div></div>
+        <div class="item"><div class="left"><span class="name">Cabrito à Padeiro</span></div><div class="price">R$ 58,00</div></div>
+        <div class="item"><div class="left"><span class="name">Filé Mignon à Parmegiana</span></div><div class="price">R$ 68,00</div></div>
+        <div class="item"><div class="left"><span class="name">Vaca Atolada</span></div><div class="price">R$ 48,00</div></div>
+      </div>
+
+      <div class="cat">
+        <h3>🍔 Lanches</h3>
+        <div class="item"><div class="left"><span class="name">X-Bacon</span></div><div class="price">R$ 17,50</div></div>
+        <div class="item"><div class="left"><span class="name">Misto Quente</span></div><div class="price">R$ 10,00</div></div>
+        <div class="item"><div class="left"><span class="name">Churrasco Tradicional</span></div><div class="price">R$ 13,00</div></div>
+      </div>
+
+      <div class="cat">
+        <h3>🥤 Bebidas & Drinks</h3>
+        <div class="item"><div class="left"><span class="name">Refrigerantes</span><span class="desc">Coca, Guaraná, Fanta</span></div><div class="price">R$ 10–22</div></div>
+        <div class="item"><div class="left"><span class="name">Sucos Naturais</span></div><div class="price">R$ 15–27</div></div>
+        <div class="item"><div class="left"><span class="name">Caipirinha de Frutas</span></div><div class="price">R$ 10,00</div></div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      Atualizado por <strong>Casa do Norte Big Jabá</strong> — <span style="color:var(--muted)">Abra no celular escaneando o QR</span>
+    </footer>
+  </div>
+</body>
+</html>
