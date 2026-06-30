@@ -1,332 +1,303 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa do Norte Big Jabá</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cardápio - Casa do Norte Big Jabá</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Poppins',sans-serif;
-        }
+<style>
 
-        body{
-            background: #f5f5f5;
-            color:#333;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
-        .hero{
-            background: linear-gradient(135deg,#8B0000,#c62828);
-            color:#fff;
-            text-align:center;
-            padding:60px 20px;
-            border-radius:0 0 40px 40px;
-            box-shadow:0 4px 15px rgba(0,0,0,.2);
-        }
+body{
+    background:#f4f4f4;
+    color:#333;
+}
 
-        .hero h1{
-            font-size:2.5rem;
-            margin-bottom:10px;
-        }
+header{
+    background:linear-gradient(135deg,#8B0000,#c62828);
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+    border-radius:0 0 35px 35px;
+    box-shadow:0 4px 15px rgba(0,0,0,.2);
+}
 
-        .hero p{
-            opacity:.9;
-            max-width:600px;
-            margin:auto;
-        }
+header h1{
+    font-size:2rem;
+}
 
-        .container{
-            width:90%;
-            max-width:1200px;
-            margin:40px auto;
-        }
+header p{
+    margin-top:10px;
+    opacity:.9;
+}
 
-        .section-title{
-            text-align:center;
-            color:#8B0000;
-            margin:50px 0 30px;
-            font-size:2rem;
-            position:relative;
-        }
+.container{
+    width:92%;
+    max-width:700px;
+    margin:auto;
+    padding:30px 0;
+}
 
-        .section-title::after{
-            content:'';
-            width:80px;
-            height:4px;
-            background:#f4b400;
-            display:block;
-            margin:10px auto;
-            border-radius:10px;
-        }
+.categoria{
+    margin-bottom:40px;
+}
 
-        .grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-            gap:25px;
-        }
+.categoria h2{
+    color:#8B0000;
+    margin-bottom:20px;
+    font-size:1.6rem;
+    border-left:6px solid #f4b400;
+    padding-left:10px;
+}
 
-        .card{
-            background:#fff;
-            padding:25px;
-            border-radius:20px;
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-            transition:.3s;
-        }
+.item{
+    background:#fff;
+    border-radius:18px;
+    padding:18px;
+    margin-bottom:18px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    transition:.3s;
+}
 
-        .card:hover{
-            transform:translateY(-8px);
-        }
+.item:hover{
+    transform:translateY(-4px);
+}
 
-        .card h3{
-            color:#8B0000;
-            margin-bottom:10px;
-        }
+.topo-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+}
 
-        .price{
-            color:#f4b400;
-            font-size:1.2rem;
-            font-weight:700;
-            margin-top:10px;
-        }
+.topo-item h3{
+    color:#222;
+    font-size:1.1rem;
+}
 
-        .day{
-            display:inline-block;
-            background:#f4b400;
-            color:#fff;
-            padding:5px 12px;
-            border-radius:20px;
-            font-size:.8rem;
-            margin-bottom:12px;
-        }
+.preco{
+    background:#f4b400;
+    color:#fff;
+    padding:8px 14px;
+    border-radius:25px;
+    font-weight:700;
+    white-space:nowrap;
+}
 
-        footer{
-            background:#222;
-            color:#fff;
-            text-align:center;
-            padding:30px 20px;
-            margin-top:60px;
-        }
+.descricao{
+    margin-top:12px;
+    color:#666;
+    line-height:1.5;
+    font-size:0.95rem;
+}
 
-        .info{
-            margin-top:10px;
-            opacity:.8;
-        }
-    </style>
+</style>
 </head>
 <body>
 
-    <section class="hero">
-        <h1>Casa do Norte Big Jabá</h1>
-        <p>
-            Especializado em comida nordestina, servindo pratos tradicionais,
-            lanches, bebidas e porções com sabor autêntico e acolhimento familiar.
-        </p>
+<header>
+    <h1>🍽️ Casa do Norte Big Jabá</h1>
+    <p>Cardápio Digital</p>
+</header>
+
+<div class="container">
+
+    <section class="categoria">
+        <h2>Pratos do Dia</h2>
+
+        <div class="item">
+            <div class="topo-item">
+                <h3>Virado à Paulista</h3>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <p class="descricao">
+                Tradicional prato paulista acompanhado de arroz, tutu de feijão, bisteca suína, couve refogada e ovo.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="topo-item">
+                <h3>Frango Assado</h3>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <p class="descricao">
+                Frango assado temperado na casa, servido com arroz, feijão e acompanhamentos.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="topo-item">
+                <h3>Feijoada</h3>
+                <span class="preco">R$ 35,00</span>
+            </div>
+            <p class="descricao">
+                Feijoada completa preparada com carnes selecionadas, acompanhada de arroz, couve, farofa e laranja.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="topo-item">
+                <h3>Dobradinha</h3>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <p class="descricao">
+                Deliciosa dobradinha preparada no tempero tradicional nordestino, servida com arroz branco.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="topo-item">
+                <h3>Peixe</h3>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <p class="descricao">
+                Filé de peixe grelhado ou frito acompanhado de arroz, salada e guarnições.
+            </p>
+        </div>
+
+        <div class="item">
+            <div class="topo-item">
+                <h3>Rabada</h3>
+                <span class="preco">R$ 30,00</span>
+            </div>
+            <p class="descricao">
+                Rabada cozida lentamente, muito saborosa, servida com arroz e polenta.
+            </p>
+        </div>
+
     </section>
 
-    <div class="container">
+    <section class="categoria">
+        <h2>Pratos Tradicionais</h2>
 
-        <h2 class="section-title">Pratos do Dia</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <span class="day">Segunda-feira</span>
-                <h3>Virado à Paulista</h3>
-                <div class="price">R$ 30,00</div>
-            </div>
-
-            <div class="card">
-                <span class="day">Terça-feira</span>
-                <h3>Frango Assado</h3>
-                <div class="price">R$ 30,00</div>
-            </div>
-
-            <div class="card">
-                <span class="day">Quarta-feira</span>
-                <h3>Feijoada</h3>
-                <div class="price">R$ 35,00</div>
-            </div>
-
-            <div class="card">
-                <span class="day">Quinta-feira</span>
-                <h3>Dobradinha</h3>
-                <div class="price">R$ 30,00</div>
-            </div>
-
-            <div class="card">
-                <span class="day">Sexta-feira</span>
-                <h3>Peixe</h3>
-                <div class="price">R$ 30,00</div>
-            </div>
-
-            <div class="card">
-                <span class="day">Sábado</span>
-                <h3>Rabada</h3>
-                <div class="price">R$ 30,00</div>
-            </div>
-
-            <div class="card">
-                <span class="day">Domingo</span>
-                <h3>Bife à Parmegiana</h3>
-                <div class="price">R$ 48,00</div>
-            </div>
-
-        </div>
-
-        <h2 class="section-title">Comerciais e Tradicionais</h2>
-
-        <div class="grid">
-
-            <div class="card">
-                <h3>Bife de Contra Filé</h3>
-                <div class="price">R$ 25,00</div>
-            </div>
-
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Cabrito à Padeiro</h3>
-                <div class="price">R$ 58,00</div>
+                <span class="preco">R$ 58,00</span>
             </div>
+            <p class="descricao">
+                Cabrito assado ao forno com batatas, preparado no autêntico estilo nordestino.
+            </p>
+        </div>
 
-            <div class="card">
-                <h3>Feijoada Família</h3>
-                <div class="price">R$ 180,00</div>
-            </div>
-
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Filé Mignon à Parmegiana</h3>
-                <div class="price">R$ 68,00</div>
+                <span class="preco">R$ 68,00</span>
             </div>
+            <p class="descricao">
+                Filé mignon empanado, coberto com molho de tomate e queijo gratinado.
+            </p>
+        </div>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Vaca Atolada</h3>
-                <div class="price">R$ 48,00</div>
+                <span class="preco">R$ 48,00</span>
             </div>
-
+            <p class="descricao">
+                Costela bovina cozida com mandioca até ficar extremamente macia e saborosa.
+            </p>
         </div>
 
-        <h2 class="section-title">Lanches</h2>
+    </section>
 
-        <div class="grid">
+    <section class="categoria">
+        <h2>Lanches</h2>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>X-Bacon</h3>
-                <div class="price">R$ 17,50</div>
+                <span class="preco">R$ 17,50</span>
             </div>
+            <p class="descricao">
+                Hambúrguer artesanal, queijo, bacon crocante, alface e tomate.
+            </p>
+        </div>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Misto Quente</h3>
-                <div class="price">R$ 10,00</div>
+                <span class="preco">R$ 10,00</span>
             </div>
-
-            <div class="card">
-                <h3>Churrasco Tradicional</h3>
-                <div class="price">R$ 13,00</div>
-            </div>
-
-            <div class="card">
-                <h3>Calabresa c/ Queijo</h3>
-                <div class="price">R$ 14,00</div>
-            </div>
-
+            <p class="descricao">
+                Pão tostado recheado com presunto e queijo derretido.
+            </p>
         </div>
 
-        <h2 class="section-title">Porções</h2>
+    </section>
 
-        <div class="grid">
+    <section class="categoria">
+        <h2>Porções</h2>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Moqueca Grande</h3>
-                <div class="price">R$ 80,00</div>
+                <span class="preco">R$ 80,00</span>
             </div>
+            <p class="descricao">
+                Moqueca preparada com peixe fresco, leite de coco, azeite de dendê e temperos especiais.
+            </p>
+        </div>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Isca de Peixe</h3>
-                <div class="price">R$ 60,00</div>
+                <span class="preco">R$ 60,00</span>
             </div>
+            <p class="descricao">
+                Deliciosas tiras de peixe empanadas e fritas, ideais para compartilhar.
+            </p>
+        </div>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Torresmo</h3>
-                <div class="price">R$ 20,00</div>
+                <span class="preco">R$ 20,00</span>
             </div>
-
-            <div class="card">
-                <h3>Frango à Passarinho</h3>
-                <div class="price">R$ 48,00</div>
-            </div>
-
+            <p class="descricao">
+                Torresmo crocante e sequinho, perfeito para acompanhar bebidas.
+            </p>
         </div>
 
-        <h2 class="section-title">Bebidas</h2>
+    </section>
 
-        <div class="grid">
+    <section class="categoria">
+        <h2>Bebidas</h2>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Refrigerantes</h3>
-                <p>Coca-Cola, Guaraná, Fanta, Sprite</p>
-                <div class="price">R$ 10,00 - R$ 22,00</div>
+                <span class="preco">R$ 10 a R$ 22</span>
             </div>
+            <p class="descricao">
+                Coca-Cola, Guaraná, Fanta, Sprite e outras opções.
+            </p>
+        </div>
 
-            <div class="card">
+        <div class="item">
+            <div class="topo-item">
                 <h3>Sucos Naturais</h3>
-                <p>Diversos sabores</p>
-                <div class="price">R$ 15,00 - R$ 27,00</div>
+                <span class="preco">R$ 15 a R$ 27</span>
             </div>
-
-            <div class="card">
-                <h3>Água Mineral</h3>
-                <p>Com e sem gás</p>
-                <div class="price">R$ 5,00 - R$ 6,00</div>
-            </div>
-
+            <p class="descricao">
+                Sucos preparados na hora com frutas frescas.
+            </p>
         </div>
 
-        <h2 class="section-title">Drinks e Caipirinhas</h2>
+    </section>
 
-        <div class="grid">
-
-            <div class="card">
-                <h3>Caipirinha de Frutas</h3>
-                <div class="price">R$ 10,00</div>
-            </div>
-
-            <div class="card">
-                <h3>Caipirosca de Smirnoff</h3>
-                <div class="price">R$ 25,00</div>
-            </div>
-
-            <div class="card">
-                <h3>Red Label</h3>
-                <div class="price">R$ 40,00</div>
-            </div>
-
-            <div class="card">
-                <h3>Vodka Energético</h3>
-                <div class="price">R$ 10,00</div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <footer>
-        <h3>Casa do Norte Big Jabá</h3>
-        <p class="info">
-            Rua Dr. José do Amaral, 333 - Jardim Três Marias
-        </p>
-        <p class="info">
-            Segunda a Domingo • 11h às 22h
-        </p>
-        <p class="info">
-            Telefone: (11) 2280-2759
-        </p>
-    </footer>
+</div>
 
 </body>
 </html>
