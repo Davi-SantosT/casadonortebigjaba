@@ -2,43 +2,168 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Casa do Norte Big Jabá | Cardápio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa do Norte Big Jabá | Cardápio Digital</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;scroll-behavior:smooth}
-body{background:#f5f5f5;color:#333}
-<header style="background:linear-gradient(135deg,#650000,#b00000);padding:25px 20px;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.3);position:sticky;top:0;z-index:999">
 
-<img src="image(6).png"
-alt="Casa do Norte Big Jabá"
-style="width:170px;max-width:90%;border-radius:50%;border:5px solid #f7b500;box-shadow:0 5px 20px rgba(0,0,0,.35);margin-bottom:18px;">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
 
-<h1 style="
-font-size:2.3rem;
+body{
+background:#f3f3f3;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#620000,#a80000);
+padding:30px 20px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+}
+
+header img{
+width:170px;
+max-width:90%;
+border-radius:50%;
+border:5px solid #F5C542;
+box-shadow:0 8px 25px rgba(0,0,0,.35);
+margin-bottom:18px;
+}
+
+header h1{
+color:#fff;
+font-size:2.2rem;
+margin-bottom:8px;
+}
+
+header h2{
+color:#FFD54F;
+font-size:1.7rem;
+letter-spacing:5px;
+font-weight:700;
+margin-bottom:25px;
+text-shadow:2px 2px 10px rgba(0,0,0,.5);
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:10px;
+overflow:auto;
+padding-bottom:5px;
+}
+
+nav a{
+text-decoration:none;
+background:#ffffff22;
+color:#fff;
+padding:10px 18px;
+border-radius:25px;
+white-space:nowrap;
+font-size:.9rem;
+transition:.3s;
+}
+
+nav a:hover{
+background:#F5C542;
+color:#000;
+}
+
+main{
+max-width:900px;
+margin:auto;
+padding:25px;
+}
+
+section{
+margin-bottom:40px;
+}
+
+section h2{
+color:#8B0000;
+border-left:7px solid #F5C542;
+padding-left:12px;
+margin-bottom:20px;
+font-size:1.8rem;
+}
+
+.card{
+background:#fff;
+border-radius:18px;
+padding:18px;
+margin-bottom:18px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.tag{
+display:inline-block;
+background:#8B0000;
+color:#fff;
+padding:5px 12px;
+border-radius:20px;
+font-size:.8rem;
+margin-bottom:12px;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:15px;
+}
+
+.top h3{
+font-size:1.1rem;
+}
+
+.price{
+background:#F5C542;
+padding:8px 15px;
+border-radius:30px;
 color:#fff;
 font-weight:700;
-margin-bottom:8px;
-letter-spacing:1px;
-">
-Casa do Norte Big Jabá
-</h1>
+}
 
-<p style="
-font-size:1.55rem;
-font-weight:700;
-color:#ffd54a;
-text-transform:uppercase;
-letter-spacing:4px;
-margin-bottom:22px;
-text-shadow:2px 2px 8px rgba(0,0,0,.4);
-">
-🍽️ CARDÁPIO DIGITAL 🍽️
-</p>
+.desc{
+margin-top:10px;
+color:#666;
+line-height:1.6;
+font-size:.95rem;
+}
 
-<nav style="display:flex;justify-content:center;gap:10px;overflow:auto;flex-wrap:nowrap;padding-bottom:5px">
+</style>
 
-<a href="#dia">Pratos</a>
+</head>
+
+<body>
+
+<header>
+
+<img src="logo.png" alt="Big Jabá">
+
+<h1>Casa do Norte Big Jabá</h1>
+
+<h2>🍽 CARDÁPIO DIGITAL 🍽</h2>
+
+<nav>
+
+<a href="#dia">Pratos do Dia</a>
 <a href="#trad">Tradicionais</a>
 <a href="#lan">Lanches</a>
 <a href="#por">Porções</a>
@@ -53,145 +178,418 @@ text-shadow:2px 2px 8px rgba(0,0,0,.4);
 <main>
 
 <section id="dia">
+
 <h2>Pratos do Dia</h2>
 
 <div class="card">
-<div class="tag">Segunda</div>
-<div class="top"><h3>Virado à Paulista</h3><span class="price">R$30,00</span></div>
-<p>Arroz, tutu de feijão, bisteca, ovo, couve refogada e torresmo.</p>
+
+<span class="tag">Segunda-feira</span>
+
+<div class="top">
+
+<h3>Virado à Paulista</h3>
+
+<span class="price">R$30,00</span>
+
+</div>
+
+<p class="desc">
+Arroz, tutu de feijão, bisteca suína, ovo frito, couve refogada e torresmo crocante.
+</p>
+
 </div>
 
 <div class="card">
-<div class="tag">Terça</div>
-<div class="top"><h3>Frango Assado</h3><span class="price">R$30,00</span></div>
-<p>Frango assado lentamente servido com arroz, feijão e salada.</p>
+
+<span class="tag">Terça-feira</span>
+
+<div class="top">
+
+<h3>Frango Assado</h3>
+
+<span class="price">R$30,00</span>
+
+</div>
+
+<p class="desc">
+Frango assado lentamente acompanhado de arroz, feijão e salada.
+</p>
+
 </div>
 
 <div class="card">
-<div class="tag">Quarta</div>
-<div class="top"><h3>Feijoada Completa</h3><span class="price">R$35,00</span></div>
-<p>Feijão preto com carnes nobres, arroz, farofa, couve e laranja.</p>
+
+<span class="tag">Quarta-feira</span>
+
+<div class="top">
+
+<h3>Feijoada Completa</h3>
+
+<span class="price">R$35,00</span>
+
+</div>
+
+<p class="desc">
+Feijão preto preparado com carnes selecionadas, arroz, farofa, couve e laranja.
+</p>
+
 </div>
 
 <div class="card">
-<div class="tag">Quinta</div>
-<div class="top"><h3>Dobradinha</h3><span class="price">R$30,00</span></div>
-<p>Dobradinha preparada no tradicional tempero nordestino.</p>
+
+<span class="tag">Quinta-feira</span>
+
+<div class="top">
+
+<h3>Dobradinha</h3>
+
+<span class="price">R$30,00</span>
+
+</div>
+
+<p class="desc">
+Tradicional dobradinha preparada no tempero especial da casa.
+</p>
+
 </div>
 
 <div class="card">
-<div class="tag">Sexta</div>
-<div class="top"><h3>Peixe</h3><span class="price">R$30,00</span></div>
-<p>Filé de peixe acompanhado de arroz, salada e guarnições.</p>
+
+<span class="tag">Sexta-feira</span>
+
+<div class="top">
+
+<h3>Peixe</h3>
+
+<span class="price">R$30,00</span>
+
+</div>
+
+<p class="desc">
+Filé de peixe grelhado acompanhado de arroz, salada e guarnições.
+</p>
+
 </div>
 
 <div class="card">
-<div class="tag">Sábado</div>
-<div class="top"><h3>Rabada</h3><span class="price">R$30,00</span></div>
-<p>Rabada cozida lentamente com muito sabor.</p>
+
+<span class="tag">Sábado</span>
+
+<div class="top">
+
+<h3>Rabada</h3>
+
+<span class="price">R$30,00</span>
+
+</div>
+
+<p class="desc">
+Rabada cozida lentamente até atingir um sabor incomparável.
+</p>
+
 </div>
 
 <div class="card">
-<div class="tag">Domingo</div>
-<div class="top"><h3>Bife à Parmegiana</h3><span class="price">R$48,00</span></div>
-<p>Bife empanado coberto com molho especial e queijo gratinado.</p>
+
+<span class="tag">Domingo</span>
+
+<div class="top">
+
+<h3>Bife à Parmegiana</h3>
+
+<span class="price">R$48,00</span>
+
+</div>
+
+<p class="desc">
+Bife empanado coberto com molho artesanal e queijo gratinado.
+</p>
+
 </div>
 
 </section>
 
 <section id="trad">
+
 <h2>Pratos Tradicionais</h2>
 
 <div class="card">
-<div class="top"><h3>Bife de Contra Filé</h3><span class="price">R$25,00</span></div>
-<p>Contra filé grelhado acompanhado de arroz, feijão e fritas.</p>
+
+<div class="top">
+
+<h3>Bife de Contra Filé</h3>
+
+<span class="price">R$25,00</span>
+
+</div>
+
+<p class="desc">
+Contra filé grelhado servido com arroz, feijão, fritas e salada.
+</p>
+
 </div>
 
 <div class="card">
-<div class="top"><h3>Cabrito à Padeiro</h3><span class="price">R$58,00</span></div>
-<p>Cabrito assado ao forno com batatas e tempero especial.</p>
+
+<div class="top">
+
+<h3>Cabrito à Padeiro</h3>
+
+<span class="price">R$58,00</span>
+
+</div>
+
+<p class="desc">
+Cabrito assado lentamente ao forno com batatas e ervas especiais.
+</p>
+
 </div>
 
 <div class="card">
-<div class="top"><h3>Filé Mignon à Parmegiana</h3><span class="price">R$68,00</span></div>
-<p>Filé mignon empanado com queijo e molho de tomate.</p>
+
+<div class="top">
+
+<h3>Filé Mignon à Parmegiana</h3>
+
+<span class="price">R$68,00</span>
+
+</div>
+
+<p class="desc">
+Filé mignon empanado coberto com queijo derretido e molho de tomate.
+</p>
+
 </div>
 
 <div class="card">
-<div class="top"><h3>Vaca Atolada</h3><span class="price">R$48,00</span></div>
-<p>Costela bovina cozida com mandioca.</p>
+
+<div class="top">
+
+<h3>Vaca Atolada</h3>
+
+<span class="price">R$48,00</span>
+
+</div>
+
+<p class="desc">
+Costela bovina cozida lentamente com mandioca.
+</p>
+
 </div>
 
 <div class="card">
-<div class="top"><h3>Feijoada Família</h3><span class="price">R$180,00</span></div>
-<p>Serve toda a família.</p>
+
+<div class="top">
+
+<h3>Feijoada Família</h3>
+
+<span class="price">R$180,00</span>
+
+</div>
+
+<p class="desc">
+Ideal para compartilhar entre toda a família.
+</p>
+
 </div>
 
 </section>
 
 <section id="lan">
+
 <h2>Lanches</h2>
 
-<div class="card"><div class="top"><h3>X-Bacon</h3><span class="price">R$17,50</span></div><p>Hambúrguer, bacon, queijo, alface e tomate.</p></div>
+<div class="card">
 
-<div class="card"><div class="top"><h3>Misto Quente</h3><span class="price">R$10,00</span></div><p>Presunto e queijo.</p></div>
+<div class="top">
 
-<div class="card"><div class="top"><h3>Churrasco Tradicional</h3><span class="price">R$13,00</span></div><p>Pão francês com carne grelhada.</p></div>
+<h3>X-Bacon</h3>
 
-<div class="card"><div class="top"><h3>Calabresa com Queijo</h3><span class="price">R$14,00</span></div><p>Calabresa acebolada com queijo derretido.</p></div>
+<span class="price">R$17,50</span>
+
+</div>
+
+<p class="desc">
+Hambúrguer artesanal, queijo, bacon, tomate e alface.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="top">
+
+<h3>Misto Quente</h3>
+
+<span class="price">R$10,00</span>
+
+</div>
+
+<p class="desc">
+Presunto e queijo no pão francês.
+</div>
+
+<div class="card">
+
+<div class="top">
+<h3>Churrasco Tradicional</h3>
+<span class="price">R$13,00</span>
+</div>
+
+<p class="desc">
+Pão francês recheado com carne grelhada na chapa.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="top">
+<h3>Calabresa com Queijo</h3>
+<span class="price">R$14,00</span>
+</div>
+
+<p class="desc">
+Calabresa acebolada coberta com queijo derretido.
+</p>
+
+</div>
 
 </section>
 
 <section id="por">
+
 <h2>Porções</h2>
 
-<div class="card"><div class="top"><h3>Moqueca Grande</h3><span class="price">R$80,00</span></div><p>Peixe fresco, leite de coco e dendê.</p></div>
+<div class="card">
+<div class="top">
+<h3>Moqueca Grande</h3>
+<span class="price">R$80,00</span>
+</div>
+<p class="desc">
+Moqueca preparada com peixe fresco, leite de coco e azeite de dendê.
+</p>
+</div>
 
-<div class="card"><div class="top"><h3>Isca de Peixe</h3><span class="price">R$60,00</span></div><p>Tiras de peixe empanadas.</p></div>
+<div class="card">
+<div class="top">
+<h3>Isca de Peixe</h3>
+<span class="price">R$60,00</span>
+</div>
+<p class="desc">
+Tiras de peixe empanadas servidas com molho da casa.
+</p>
+</div>
 
-<div class="card"><div class="top"><h3>Torresmo</h3><span class="price">R$20,00</span></div><p>Torresmo crocante.</p></div>
+<div class="card">
+<div class="top">
+<h3>Torresmo</h3>
+<span class="price">R$20,00</span>
+</div>
+<p class="desc">
+Torresmo crocante preparado diariamente.
+</p>
+</div>
 
-<div class="card"><div class="top"><h3>Frango à Passarinho</h3><span class="price">R$48,00</span></div><p>Frango crocante servido em porção.</p></div>
+<div class="card">
+<div class="top">
+<h3>Frango à Passarinho</h3>
+<span class="price">R$48,00</span>
+</div>
+<p class="desc">
+Frango temperado e frito, ideal para compartilhar.
+</p>
+</div>
 
 </section>
 
 <section id="beb">
+
 <h2>Bebidas</h2>
 
-<div class="card"><div class="top"><h3>Água</h3><span class="price">R$5,00</span></div></div>
-<div class="card"><div class="top"><h3>Água com Gás</h3><span class="price">R$6,00</span></div></div>
-<div class="card"><div class="top"><h3>Refrigerante Lata</h3><span class="price">R$10,00</span></div></div>
-<div class="card"><div class="top"><h3>Refrigerante 600ml</h3><span class="price">R$12,00</span></div></div>
-<div class="card"><div class="top"><h3>Refrigerante 2L</h3><span class="price">R$22,00</span></div></div>
-<div class="card"><div class="top"><h3>Suco Natural</h3><span class="price">R$15 a R$27</span></div></div>
+<div class="card">
+<div class="top"><h3>Água Mineral</h3><span class="price">R$5,00</span></div>
+</div>
+
+<div class="card">
+<div class="top"><h3>Água com Gás</h3><span class="price">R$6,00</span></div>
+</div>
+
+<div class="card">
+<div class="top"><h3>Refrigerante Lata</h3><span class="price">R$10,00</span></div>
+</div>
+
+<div class="card">
+<div class="top"><h3>Refrigerante 600ml</h3><span class="price">R$12,00</span></div>
+</div>
+
+<div class="card">
+<div class="top"><h3>Refrigerante 2 Litros</h3><span class="price">R$22,00</span></div>
+</div>
+
+<div class="card">
+<div class="top"><h3>Suco Natural</h3><span class="price">R$15 a R$27</span></div>
+</div>
 
 </section>
 
 <section id="drinks">
-<h2>Drinks</h2>
 
-<div class="card"><div class="top"><h3>Caipirinha</h3><span class="price">R$18,00</span></div></div>
-<div class="card"><div class="top"><h3>Caipiroska Smirnoff</h3><span class="price">R$25,00</span></div></div>
-<div class="card"><div class="top"><h3>Caipiroska Absolut</h3><span class="price">R$32,00</span></div></div>
-<div class="card"><div class="top"><h3>Caipisakê</h3><span class="price">R$28,00</span></div></div>
-<div class="card"><div class="top"><h3>Gin Tônica</h3><span class="price">R$35,00</span></div></div>
-<div class="card"><div class="top"><h3>Red Label Dose</h3><span class="price">R$40,00</span></div></div>
-<div class="card"><div class="top"><h3>Black Label Dose</h3><span class="price">R$50,00</span></div></div>
-<div class="card"><div class="top"><h3>Vodka com Energético</h3><span class="price">R$30,00</span></div></div>
+<h2>Drinks & Destilados</h2>
+
+<div class="card"><div class="top"><h3>Cachaça 51</h3><span class="price">R$4,50</span></div></div>
+<div class="card"><div class="top"><h3>Velho Barreiro</h3><span class="price">R$4,50</span></div></div>
+<div class="card"><div class="top"><h3>Cabaré Ouro</h3><span class="price">R$9,00</span></div></div>
+<div class="card"><div class="top"><h3>Cabaré Prata</h3><span class="price">R$9,00</span></div></div>
+<div class="card"><div class="top"><h3>Cabaré Amburana</h3><span class="price">R$10,00</span></div></div>
+<div class="card"><div class="top"><h3>Ipioca Ouro</h3><span class="price">R$7,00</span></div></div>
+<div class="card"><div class="top"><h3>São Francisco</h3><span class="price">R$7,00</span></div></div>
+<div class="card"><div class="top"><h3>Pitu</h3><span class="price">R$6,00</span></div></div>
+<div class="card"><div class="top"><h3>Claudionor</h3><span class="price">R$10,00</span></div></div>
+<div class="card"><div class="top"><h3>Velha Januária</h3><span class="price">R$10,00</span></div></div>
+<div class="card"><div class="top"><h3>Salinas</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Saleta</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Boazinha</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Espírito de Minas</h3><span class="price">R$18,00</span></div></div>
+<div class="card"><div class="top"><h3>Recordação</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Serragrande</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Caranguejo</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Coquinho Record</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Terra Brasília</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Jangada</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Rainha Pernambucana</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Canelinha</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Jurupinga</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Ipioca Envelhecida 150</h3><span class="price">R$18,00</span></div></div>
+<div class="card"><div class="top"><h3>Ipioca Envelhecida 160</h3><span class="price">R$20,00</span></div></div>
 
 </section>
 
 <section id="cer">
+
 <h2>Cervejas</h2>
 
-<div class="card"><div class="top"><h3>Heineken Long Neck</h3><span class="price">R$12,00</span></div></div>
-<div class="card"><div class="top"><h3>Budweiser Long Neck</h3><span class="price">R$11,00</span></div></div>
-<div class="card"><div class="top"><h3>Stella Artois</h3><span class="price">R$12,00</span></div></div>
-<div class="card"><div class="top"><h3>Original 600ml</h3><span class="price">R$18,00</span></div></div>
-<div class="card"><div class="top"><h3>Serramalte 600ml</h3><span class="price">R$18,00</span></div></div>
-<div class="card"><div class="top"><h3>Brahma Duplo Malte</h3><span class="price">R$16,00</span></div></div>
-<div class="card"><div class="top"><h3>Skol 600ml</h3><span class="price">R$15,00</span></div></div>
-<div class="card"><div class="top"><h3>Antarctica Original</h3><span class="price">R$18,00</span></div></div>
+<div class="card"><div class="top"><h3>Brahma</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Skol</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Antártica</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Itaipava</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Serra Malt</h3><span class="price">R$17,00</span></div></div>
+<div class="card"><div class="top"><h3>Original</h3><span class="price">R$15,00</span></div></div>
+<div class="card"><div class="top"><h3>Stella Artois</h3><span class="price">R$17,00</span></div></div>
+<div class="card"><div class="top"><h3>Spaten</h3><span class="price">R$17,00</span></div></div>
+<div class="card"><div class="top"><h3>Amstel</h3><span class="price">R$15,00</span></div></div>
+<div class="card"><div class="top"><h3>Petra</h3><span class="price">R$15,00</span></div></div>
+<div class="card"><div class="top"><h3>Império</h3><span class="price">R$15,00</span></div></div>
+<div class="card"><div class="top"><h3>Heineken</h3><span class="price">R$18,00</span></div></div>
+<div class="card"><div class="top"><h3>Litrão Brahma</h3><span class="price">R$16,00</span></div></div>
+<div class="card"><div class="top"><h3>Litrão Skol</h3><span class="price">R$16,00</span></div></div>
+<div class="card"><div class="top"><h3>Litrão Duplo Malte</h3><span class="price">R$18,00</span></div></div>
+<div class="card"><div class="top"><h3>Litrão Original</h3><span class="price">R$19,00</span></div></div>
+<div class="card"><div class="top"><h3>Long Neck Heineken</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Long Neck Corona</h3><span class="price">R$12,00</span></div></div>
+<div class="card"><div class="top"><h3>Lata Brahma / Skol / Itaipava</h3><span class="price">R$6,00</span></div></div>
+<div class="card"><div class="top"><h3>Lata Brahma Sem Álcool</h3><span class="price">R$8,00</span></div></div>
+<div class="card"><div class="top"><h3>Long Neck Heineken Zero</h3><span class="price">R$12,00</span></div></div>
 
 </section>
 
